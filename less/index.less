@@ -55,6 +55,91 @@ table {
 
 html, body {
 	height: 100%;
-	background: blue;
+	font-size: 62.5%;
+}
+
+// VARIABLES
+// SIZING
+@pageWidth: 960px;
+@asideWidth: 320px;
+@mainWidth: 640px;
+@center: 0 auto;
+
+@small: 1.8rem;
+@medium: 2.4rem;
+@large: 2.8rem;
+@veryLarge: 3.4rem;
+
+// COLORS
+@bodyColor: #fff;
+@containerColor: #fcfcfc;
+@buttonColor: #f1f1f1;
+@buttonHoverColor: #dadada;
+
+// ELEMENTS
+@standardBorder: 1px solid black;
+
+
+// MIXINS
+.flex-me() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.standard-button() {
+	background-color: @buttonColor;
+	border: @standardBorder;
+	border-radius: 10px;
+	padding: 10px 25px;
+	&:hover {
+		background: @buttonHoverColor;
+	}
+}
+
+p {
+	font-size: @small;
+}
+
+
+.container {
+	max-width: @pageWidth;
+	border: 1px solid red;
+	margin: @center;
+	background: @containerColor;
+	.flex-me();
+}
+
+.aside {
+	max-width: @asideWidth;
+	border:1px solid blue;
+
+	h1 {
+		text-align: center;
+		font-size: @veryLarge;
+		text-decoration: underline;
+	}
+	h3 {
+		text-align: center;
+		font-size: @medium;
+
+	}
+	.headerImg{
+		width: 80%;
+		margin: @center;
+		
+		img {
+			margin: @center;
+			width: 100%;
+		}
+	} 
+}
+
+.main {
+	max-width: @mainWidth;
+	border:1px solid blue;
+
+	h2 {
+		font-size: @large;
+	}
 }
 

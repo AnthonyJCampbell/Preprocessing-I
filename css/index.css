@@ -133,5 +133,44 @@ table {
 html,
 body {
   height: 100%;
-  background: blue;
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.8rem;
+}
+.container {
+  max-width: 960px;
+  border: 1px solid red;
+  margin: 0 auto;
+  background: #fcfcfc;
+  display: flex;
+  justify-content: space-between;
+}
+.aside {
+  max-width: 320px;
+  border: 1px solid blue;
+}
+.aside h1 {
+  text-align: center;
+  font-size: 3.4rem;
+  text-decoration: underline;
+}
+.aside h3 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.aside .headerImg {
+  width: 80%;
+  margin: 0 auto;
+}
+.aside .headerImg img {
+  margin: 0 auto;
+  width: 100%;
+}
+.main {
+  max-width: 640px;
+  border: 1px solid blue;
+}
+.main h2 {
+  font-size: 2.8rem;
 }
