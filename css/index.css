@@ -138,39 +138,115 @@ body {
 p {
   font-size: 1.8rem;
 }
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
 .container {
   max-width: 960px;
-  border: 1px solid red;
   margin: 0 auto;
   background: #fcfcfc;
   display: flex;
   justify-content: space-between;
 }
-.aside {
+.container .aside {
   max-width: 320px;
-  border: 1px solid blue;
+  background: #f7f7f7;
 }
-.aside h1 {
+.container .aside header h1 {
+  line-height: 6.5rem;
   text-align: center;
   font-size: 3.4rem;
   text-decoration: underline;
 }
-.aside h3 {
+.container .aside header h3 {
   text-align: center;
   font-size: 2.4rem;
+  margin: 0 auto 20px auto;
 }
-.aside .headerImg {
+.container .aside .headerImg {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
-.aside .headerImg img {
-  margin: 0 auto;
+.container .aside .headerImg img {
   width: 100%;
+  border-radius: 20px;
 }
-.main {
+.container .aside h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 0 auto 10px auto;
+}
+.container .aside p {
+  width: 90%;
+  margin: 0 auto;
+  margin: 0 auto 10px auto;
+}
+.container .aside .contact {
+  margin-top: 30px;
+}
+.container .aside .contact h3 {
+  margin: 0 auto 20px auto;
+}
+.container .aside .contact ul {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+.container .aside .contact ul li {
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+.container .aside .social {
+  margin-top: 30px;
+}
+.container .aside .social h3 {
+  margin: 0 auto 20px auto;
+}
+.container .aside .social ul {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+.container .aside .social ul li {
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+.container .main {
   max-width: 640px;
-  border: 1px solid blue;
 }
-.main h2 {
+.container .main .textholder {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .main .textholder h2 {
   font-size: 2.8rem;
+  line-height: 8rem;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .aside {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 80%;
+  }
+  .container .aside .contact ul li {
+    text-align: center;
+  }
+  .container .aside .social {
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+  }
+  .container .main {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 80%;
+  }
+  .container .main h2 {
+    text-align: center;
+    line-height: 8rem;
+  }
 }
