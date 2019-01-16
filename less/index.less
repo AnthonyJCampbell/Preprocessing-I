@@ -135,6 +135,7 @@ a {
 }
 
 .container {
+	min-height: 100%;
 	max-width: @pageWidth;
 	margin: @center;
 	background: @containerColor;
@@ -190,11 +191,30 @@ a {
 				font-size: @large;
 				line-height: 8rem;
 			}
+			ul {
+				li {
+					width: 90%;
+					margin: @center;
+					margin-bottom: 20px;
+					h4 {
+						font-size: @medium;
+						margin-bottom: @smallMargin;
+						line-height: 4rem;
+					}
+					p.dates {
+						text-decoration: underline;
+						line-height: 3rem;
+					}
+				}
+			}
+			
 		}
-
-		
 	}
-
+	footer {
+		height: 300px;
+		background: #dfdfdf;
+		width: 100vw;
+	}
 }
 @media (max-width: 800px) {
 	.container {
